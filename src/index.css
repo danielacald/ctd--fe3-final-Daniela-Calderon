@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.favButton{
+  background-color: rgba(136, 136, 136, 0.116);
+  padding: 10px;
+  border: none;
+  width: 110%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.isFav{
+  text-align: center;
+ position: relative;
+ top: -6px;
+ left : 3px; 
+
+}
+
+.submitButton{
+  background-color: #2abfd3; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3%;
+  width: 95%;
+  margin: auto;
+  }
+
+.successAlert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2abfd3;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+
+h1{
+  margin-top: 0;
+  text-align: center;
+}
+
+nav{
+  /*display: flex;
+  /* width: 80vw; */
+  /*justify-content: flex-start;
+  justify-content: center;
+  padding: 1rem;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2abfd3;
+  color: white;
+  font-size: 18px;
+}
+
+nav.dark {
+  background-color: rgb(4, 95, 131);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  }
+
+  .logo-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  display: flex;
+  }
+
+  .logo-text {
+  font-size: 24px;
+  margin: 0;
+  }
+
+  .logo-d {
+    display: flex;
+    color: red;
+  }
+  
+  .logo-h {
+    padding-right: 10px;
+  }
+
+a{
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+a:hover{
+  color: rgb(223, 226, 226);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 150px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 2rem 2rem;
+  position: relative;
+  bottom: 0;
+  width: 90%;
+  height: 15px;
+  margin-top: 1rem;
+}
+
+.back-btn {
+  width: 100%;
+  height: 50px;
+  background-color: red;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  margin: 15px 0;
+}
+.back-btn.dark {
+  background-color: #333;
+  color: #fff;
+}
+.dh-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.dh-logo > img {
+  width: 200px;
+  margin: 0;
+
+}
+.dh-logo > p {
+  margin: 0;
+}
+
+.icon-footer {
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-end;
+
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.card{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  border: 0.5px solid rgb(136, 136, 136);
+}
+
+.card > a > img{
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.card:hover{
+  border: 0.5px solid rgb(122, 187, 224);
+}
+
+.card-grid{
+  
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 95vw;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+table {
+ border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.dark{
+  background-color: #12121296;
+  color: white;
+}
+
+
+.dark > a {
+  color: rgb(127, 221, 245);
+}
+
+.dark .text-center .h404 {
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+
+}
+
+.dark  .favButton{
+  background-color: lightgray;
+}
+
+.dark .card .p{
+  color: white;
+}
+
+.fav {
+  color: red;
+}
+
+.inputError{
+  -webkit-box-shadow: 0 0 5px 1px rgba(255, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px 1px rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 5px 1px rgba(255, 0, 0, 0.5);
+  border: 1px solid red;
+}
+
+/* -------------------------------------------------------*/
+.label {
+  display: flex;
+  align-items: center;
+}
+
+.bat {
+  margin-right: -3px;
+  margin-left: -4px;
+}
+
